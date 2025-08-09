@@ -43,7 +43,21 @@ button {
   color: #fff;
   gap: 20px;
 }
+.task div button:first-child {
+  background-color: #28a745; 
+}
 
+.task div button:nth-child(2) {
+  background-color: #007bff;
+}
+
+.task div button:last-child {
+  background-color: #dc3545; 
+}
+
+.task div button:hover {
+  opacity: 0.8;
+}
 .task {
   display: flex;
   justify-content: space-between;
