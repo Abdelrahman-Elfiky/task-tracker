@@ -11,8 +11,7 @@ function TaskForm({ onAdd, onUpdate, editingTask }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!text.trim()) return;
-
+    if (!text) return;
     if (editingTask) {
       onUpdate({ ...editingTask, text });
     } else {
@@ -24,12 +23,11 @@ function TaskForm({ onAdd, onUpdate, editingTask }) {
   return (
     <form onSubmit={handleSubmit}>
       <input
-        type="text"
-        placeholder="Enter a task"
         value={text}
         onChange={(e) => setText(e.target.value)}
+        placeholder="Task..."
       />
-      <button type="submit">{editingTask ? "Update" : "Add"} Task</button>
+      <button>{editingTask ? "Update" : "Add"}</button>
     </form>
   );
 }
