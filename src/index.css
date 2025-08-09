@@ -1,106 +1,48 @@
-/* Reset عام */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* جسم الصفحة */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
-  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
-/* الحاوية العامة */
 .container {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 600px;
+  background: #fff;
+  padding: 15px;
+  width: 350px;
+  border-radius: 6px;
 }
 
-/* العنوان */
-.container h1 {
+h1 {
   text-align: center;
-  margin-bottom: 2rem;
-  color: #333;
+  margin-bottom: 15px;
 }
 
-/* فورم المهام */
 form {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 
-input[type="text"] {
+input {
   flex: 1;
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+  padding: 5px;
 }
 
 button {
-  padding: 0.6rem 1rem;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  border-radius: 6px;
+  padding: 5px 10px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.2s;
 }
 
-button:hover {
-  background-color: #0056b3;
-}
-
-/* عنصر المهمة */
-.task-item {
+.task {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: #fafafa;
-  padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-bottom: 0.75rem;
+  background: #eee;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
-.task-item span {
-  flex: 1;
-  font-size: 1rem;
-  color: #333;
-}
-
-.task-item.completed {
-  background-color: #e1f0e1; /* لون خفيف أخضر */
-  border-left: 5px solid #28a745;
-}
-
-.task-item.completed span {
+.task.done span {
   text-decoration: line-through;
-  color: #6c757d;
-}
-
-.task-item.pending {
-  background-color: #fff3cd; /* لون خفيف أصفر */
-  border-left: 5px solid #ffc107;
-}
-
-.task-item.pending span {
-  font-weight: bold;
-  color: #212529;
-}
-
-.task-item button {
-  margin-left: 0.5rem;
-  font-size: 0.85rem;
-  padding: 0.4rem 0.6rem;
+  color: gray;
 }
